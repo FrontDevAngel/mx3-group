@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Bison Bold';
+    src: url('../../assets/fonts/inter/Bison-Bold\(PersonalUse\).ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+@import "base/variables";
+@import "base/mixins";
+@import "common/title";
+@import "common/button";
+@import "header/header";
+@import "index/index";
+@import "footer/footer";

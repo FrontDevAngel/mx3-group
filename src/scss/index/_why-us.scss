@@ -1,0 +1,26 @@
+
+.#{$prefix}_why-us-section{
+    display: flex;
+    flex-flow: column;
+    align-items: center;    
+}
+
+.#{$prefix}_why-us-grid{
+    width: 80%;
+}
+
+.#{$prefix}_why-us-card{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.#{$prefix}_why-us-icon{
+    height: 158px;
+    width: 158px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

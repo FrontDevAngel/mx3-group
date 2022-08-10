@@ -1,0 +1,10 @@
+.#{$prefix}_clients-section-wrapper{
+
+    .#{$prefix}_clients-title{
+        color:$clients-color-title-text;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        font-size: 3.2rem;
+        font-weight: bolder;
+    }
+}

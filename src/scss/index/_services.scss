@@ -1,0 +1,36 @@
+.#{$prefix}_service-section-background{
+    position:absolute;
+    top:50%;
+    height: 40%;
+    background-color: #eee;
+    transform: translate(0, -50%);
+    width:100%;
+    z-index: -1;
+}
+
+.#{$prefix}_service-inner-section:last-child{
+    position:relative;
+    
+    .#{$prefix}_service-button-next,
+    .#{$prefix}_service-button-prev{
+        transform: scale(0.7);
+        color:$slider-nav-icon-color;
+    }
+    
+    .#{$prefix}_service-slider{
+        width:100%;
+        
+        .swiper-slide{
+            background-color: white;
+        }
+    
+        .#{$prefix}_service-card-image{
+            height: 350px;
+        }
+    
+        .#{$prefix}_service-card-description{
+            color: $base-font-color;
+        }
+    }
+}
+

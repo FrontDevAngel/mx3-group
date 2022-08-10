@@ -1,0 +1,18 @@
+#footer-content{
+    background-color: $footer-background-color;
+
+    .#{$prefix}_footer-section{
+        p{
+            color: white;
+        }
+
+        a{
+            color: $footer-link-color;
+
+            &:hover,
+            &:focus{
+                color: lighten($footer-link-color, 10%);
+            }
+        }
+    }
+}

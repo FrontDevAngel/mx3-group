@@ -1,0 +1,70 @@
+$nav-link-color: #375551;
+$nav-link-hover-color: #c19e58;
+$header-nav-transition: background-color .15s ease-in-out;
+
+#site-header{
+	position: relative;
+	height: 72px;
+	z-index: 1000;
+}
+
+.navbar-brand{
+	width:200px;
+	height: 72px;
+
+	svg{
+		width: 100%;
+		height: 100%;
+	}
+
+	.img{
+		color: white;
+	}
+}
+
+.menu-item > a{
+	display: block;
+	padding: $nav-link-padding-y $nav-link-padding-x;
+	@include font-size($nav-link-font-size);
+	font-weight: $nav-link-font-weight;
+	color: $nav-link-color;
+	text-decoration: if($link-decoration == none, null, none);
+	@include transition($nav-link-transition);
+
+	&:hover,
+	&:focus {
+		color: $nav-link-hover-color;
+		text-decoration: if($link-hover-decoration == underline, none, null);
+	}
+
+	// Disabled state lightens text
+	&.disabled {
+		color: $nav-link-disabled-color;
+		pointer-events: none;
+		cursor: default;
+	}
+}
+
+.#{$prefix}_navbar{
+	height: 72px;
+	@include transition($header-nav-transition);
+	
+	&.sticky{
+		position: fixed;
+		background-color:white;
+
+
+		// .navbar-brand use{
+			
+		// 	symbol#logo g#logo g#img{
+		// 		fill: #292E66;
+		// 	}
+		// }
+
+	}
+
+	.navbar-collapse{
+		flex-flow: column;
+		align-items: flex-end;
+	}
+}

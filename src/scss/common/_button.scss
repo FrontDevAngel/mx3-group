@@ -1,0 +1,75 @@
+
+$button-bg-color-white: white;
+$button-bg-color-gold: #c19e58;
+$button-text-color-white: white;
+$button-text-color-gold: #c19e58;
+$button-text-color-green:#2d413e;
+$button-brdr-color-green: #2d413e;
+$button-brdr-color-gold: #c19e58;
+$button-font-size-default-sm: 1.2rem;
+$button-font-size-default-md: 1.6rem;
+$button-font-size-sm: 1rem;
+
+
+.#{$prefix}_button{
+    position: relative;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-size:$button-font-size-default-md;
+    width:100%;
+    z-index:1;
+
+    &--gold{
+        background-color: $button-bg-color-gold;
+        color: $button-text-color-white;
+
+        &:hover,
+        &:focus {
+            background-color: darken( $button-bg-color-gold, 10%);
+            color: $button-text-color-white;
+        }
+    }
+
+    &--border{
+        font-size:$button-font-size-default-sm;
+        border: solid 2px
+    }
+
+    &--border-green{
+        border-color: $button-brdr-color-green;
+        background-color: $button-bg-color-white;
+        color: $button-text-color-gold;
+
+        &:hover,
+        &:focus {
+            background-color:$button-bg-color-gold;
+            color:$button-text-color-white;
+        }
+    }
+
+    &--border-gold{
+        border-color: $button-brdr-color-gold;
+        background-color: transparent;
+        color: $button-text-color-white;
+
+        &:hover,
+        &:focus {
+            background-color:$button-bg-color-white;
+            color:$button-text-color-green;
+        }
+    }
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+@include media-breakpoint-down(md) {
+    .#{$prefix}_button{
+        font-size:$button-font-size-sm;
+
+        &--border{
+            font-size:$button-font-size-sm;
+        }
+    }
+}

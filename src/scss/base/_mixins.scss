@@ -1,0 +1,5 @@
+@mixin font-size-control($font-size, $letter-spacing: 0.1rem){
+    font-size: $font-size;
+    line-height: calc(#{$font-size} - 0.4rem);
+    letter-spacing: $letter-spacing;
+}

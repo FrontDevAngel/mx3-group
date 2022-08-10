@@ -1,0 +1,11 @@
+#close-content{
+    background-color: #c19138;
+
+    .#{$prefix}_close-title{
+        color:white;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        font-size: 3.2rem;
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,29 @@
+#slideshow-content{
+    margin-top: -6rem;
+}
+
+.#{$prefix}_slideshow-inner-section{
+    position:relative;
+    padding-bottom:5rem;
+
+    .#{$prefix}_slideshow-pagination{
+        span{
+            height:18px;
+            width:18px;
+            background:lighten($slider-pag-bullet-color, 20%);
+            opacity:1;
+            
+            &.swiper-pagination-bullet-active{
+                background:$slider-pag-bullet-color;
+            }
+        }
+    }
+
+    .#{$prefix}_slideshow-slider{
+    
+        .#{$prefix}_slideshow-card-image{
+           height: 733px;
+           object-fit: cover;
+        }
+    }
+}

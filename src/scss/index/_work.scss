@@ -1,0 +1,39 @@
+.#{$prefix}_work-section-wrapper{
+
+    .#{$prefix}_work-section{
+        position:relative;
+
+        .#{$prefix}_work-button-next,
+        .#{$prefix}_work-button-prev{
+            transform: scale(0.7);
+            color:$slider-nav-icon-color;
+        }
+
+        .#{$prefix}_work-slider{
+            .#{$prefix}_work-card-image{
+                height: 520px;
+                object-fit: cover;
+            }
+    
+            .#{$prefix}_work-card-description{
+                color: $base-font-color;
+                letter-spacing: 1rem;
+                padding-bottom:2rem;
+            }
+
+            .#{$prefix}_work-pagination{
+                span{
+                    height:18px;
+                    width:18px;
+                    background:lighten($slider-pag-bullet-color, 20%);
+                    opacity:1;
+                    
+                    &.swiper-pagination-bullet-active{
+                        background:$slider-pag-bullet-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
